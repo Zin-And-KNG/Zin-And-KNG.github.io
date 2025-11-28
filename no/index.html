@@ -32,7 +32,6 @@
   }
   h1 {
     text-align: center;
-    margin-top: 20%;
     font-size: 5em;
     color: red;
   }
@@ -41,7 +40,7 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+<title>YOU DID THIS TO ME</title>
 </head>
 <body>
 
@@ -63,9 +62,9 @@
     setInterval(function() {
         document.title = Math.random().toString(36).substring(2, 15);
         setTimeout(function() {
-        document.title = originalTitle;
+        document.title = "YOU DID THIS TO ME";
         }, 25);
-    }, 50);
+    }, 250);
 
     // automatically force copy a text when the user interacts with the page
     document.addEventListener('copy', function(e) {
